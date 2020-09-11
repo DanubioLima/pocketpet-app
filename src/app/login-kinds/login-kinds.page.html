@@ -1,0 +1,33 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>login-kinds</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="ion-padding">
+  <a routerLink="/" routerDirection="back">
+    <ion-icon name="arrow-back-outline" class="arrow-back"></ion-icon>
+  </a>
+
+  <ion-grid>
+    <ion-row>
+      <ion-img src="assets/logo-page-login.png"></ion-img>
+      <h1><span>pocket</span>pet</h1>
+    </ion-row>
+
+    <ion-row>
+      <h3>Faça login ou cadastre-se</h3>
+
+      <ion-item *ngFor="let item of items" class="item" button detail="false">
+        <ion-label> {{item.text}} </ion-label>
+        <ion-icon
+          name="{{item.icon}}"
+          class="{{item.iconClass}}"
+          slot="start"
+        ></ion-icon>
+      </ion-item>
+
+      <a>Explorar</a>
+    </ion-row>
+  </ion-grid>
+</ion-content>
