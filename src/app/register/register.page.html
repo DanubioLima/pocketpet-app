@@ -1,0 +1,74 @@
+<ion-header collapse="condense">
+  <ion-toolbar> </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="ion-padding">
+  <a routerLink="/login-kinds" routerDirection="back">
+    <ion-icon name="arrow-back-outline" class="arrow-back"></ion-icon>
+  </a>
+
+  <ion-grid>
+    <ion-row>
+      <h2>Muito bom ter você por aqui!</h2>
+      <h3>Para começar, fale de você</h3>
+
+      <form>
+        <div class="wrapper-input">
+          <span>
+            <ion-icon name="person-circle"></ion-icon>
+          </span>
+          <ion-input required placeholder="Nome"></ion-input>
+        </div>
+
+        <div class="wrapper-input">
+          <span>
+            <ion-icon name="at-circle"></ion-icon>
+          </span>
+          <ion-input required placeholder="E-mail" type="email"></ion-input>
+        </div>
+
+        <div class="wrapper-input">
+          <span>
+            <ion-icon name="call"></ion-icon>
+          </span>
+          <ion-input
+            required
+            placeholder="Telefone"
+            type="tel"
+            [brmasker]="{phone: true}"
+          ></ion-input>
+        </div>
+
+        <div class="wrapper-input">
+          <span>
+            <ion-icon name="lock-closed"></ion-icon>
+          </span>
+          <ion-input required placeholder="Senha" type="password"></ion-input>
+        </div>
+
+        <div class="wrapper-input">
+          <span>
+            <ion-icon name="lock-closed"></ion-icon>
+          </span>
+          <ion-input
+            required
+            placeholder="Confirme sua senha"
+            type="password"
+          ></ion-input>
+        </div>
+
+        <p>
+          Fazendo o cadastro você aceita os
+          <span>Termos de serviço e política de privacidade</span>
+        </p>
+
+        <ion-button expand="block" shape="round">Cadastrar</ion-button>
+      </form>
+
+      <a class="explore" routerLink="/" routerDirection="back">
+        Já possuo conta
+        <ion-icon name="arrow-forward"></ion-icon>
+      </a>
+    </ion-row>
+  </ion-grid>
+</ion-content>
