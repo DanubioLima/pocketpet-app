@@ -17,6 +17,10 @@ const routes: Routes = [
     path: 'login-email',
     loadChildren: () => import('./login-email/login-email.module').then( m => m.LoginEmailPageModule)
   },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
 
 ];
 @NgModule({
