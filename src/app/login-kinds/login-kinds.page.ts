@@ -8,7 +8,7 @@ import { Component, OnInit } from "@angular/core";
 export class LoginKindsPage implements OnInit {
   items = [
     {
-      link: "/register",
+      link: "/login-email",
       text: "Continuar com e-mail",
       icon: "mail",
       iconClass: "",

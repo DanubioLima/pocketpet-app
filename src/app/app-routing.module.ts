@@ -13,7 +13,11 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },  {
+    path: 'login-email',
+    loadChildren: () => import('./login-email/login-email.module').then( m => m.LoginEmailPageModule)
   },
+
 ];
 @NgModule({
   imports: [
