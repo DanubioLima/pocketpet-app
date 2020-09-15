@@ -11,7 +11,12 @@ const routes: Routes = [
       {
         path: "home",
         loadChildren: () =>
-          import("./home/home.module").then((m) => m.HomePageModule),
+          import("../home/home.module").then((m) => m.HomePageModule),
+      },
+      {
+        path: "service-shower",
+        loadChildren: () =>
+          import("../service-shower/service-shower.module").then((m) => m.ServiceShowerPageModule),
       },
       {
         path: "",
