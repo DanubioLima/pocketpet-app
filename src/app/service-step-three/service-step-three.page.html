@@ -1,0 +1,84 @@
+<ion-content fullscreen class="ion-padding">
+  <div class="top">
+    <a routerLink="/service-step-two" routerDirection="back">
+      <ion-icon name="arrow-back-outline" class="arrow-back"></ion-icon>
+    </a>
+  </div>
+
+  <div class="content">
+    <div class="customer">
+      <img src="assets/store.png" />
+      <h1>Celeiro Petshop</h1>
+      <span>Rua Santa Clara 1511, guaribas</span>
+    </div>
+    <div class="data-buy">
+      <article>
+        <span>Serviço:</span>
+        <span>Banho master pelo longo Tamanho PP</span>
+      </article>
+      <article>
+        <span>Data:</span>
+        <span>10/07/2020 - 10:00</span>
+      </article>
+      <article>
+        <span>Meu pet:</span>
+        <span>Simba</span>
+      </article>
+      <article>
+        <span>Valor:</span>
+        <span>R$ 35,00</span>
+      </article>
+    </div>
+
+    <div class="buy">
+      <ion-label>Observações:</ion-label>
+      <ion-textarea></ion-textarea>
+      <a>
+        <ion-button expand="block" shape="round" id="add"
+          >Adicionar ao carrinho</ion-button
+        >
+      </a>
+      <a>
+        <ion-button expand="block" shape="round" id="end"
+          >Finalizar compra</ion-button
+        >
+      </a>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="home-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="paw-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="heart-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="heart-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-footer>
