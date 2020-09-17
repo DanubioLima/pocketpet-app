@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar>
+    <a routerLink="/dashboard">
+      <ion-icon name="arrow-back-outline" id="back"></ion-icon>
+    </a>
+    <div class="sidemenu-header">
+      <ion-avatar>
+        <img src="assets/dog.jpg" />
+      </ion-avatar>
+      <div>
+        <h3>Maria José</h3>
+        <a routerLink="/update">
+          Editar cadastro
+          <ion-icon name="settings-outline"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="ion-padding">
+  <h4>MEUS PETS</h4>
+
+  <div class="items">
+    <div class="item">
+      <ion-avatar>
+        <img src="assets/dog.jpg" />
+      </ion-avatar>
+      <span>KAKA</span>
+    </div>
+    <div class="item">
+      <ion-avatar>
+        <img src="assets/dog.jpg" />
+      </ion-avatar>
+      <span>KAKA</span>
+    </div>
+    <div class="item">
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <span>Adicionar</span>
+    </div>
+
+    <div class="item">
+      <ion-icon name="card-outline"></ion-icon>
+      <span>CARTÃO VACINA</span>
+    </div>
+    <div class="item">
+      <ion-icon name="card-outline"></ion-icon>
+      <span>DADOS DA KAKA</span>
+    </div>
+    <div class="item">
+      <ion-icon name="card-outline"></ion-icon>
+      <span>MEU HISTÓRICO</span>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="home-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="paw-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="heart-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="heart-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-footer>
