@@ -1,5 +1,5 @@
 ion-toolbar {
-    --background:#7a40fc;
+    --background: #7a40fc;
     height: 12px;
 }
 
@@ -12,6 +12,10 @@ ion-grid {
 
 ion-img {
     height: 150px;
+}
+
+ion-button {
+    --background: #0bf4c7;
 }
 
 .link-create {
@@ -46,7 +50,7 @@ form {
 
 .arrow-back {
     font-size: 24px;
-    color:#7a40fc;
+    color: #7a40fc;
 }
 
 .wrapper-input {

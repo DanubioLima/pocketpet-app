@@ -9,6 +9,10 @@ ion-grid {
     height: 100%;
 }
 
+ion-button {
+    --background: #0bf4c7;
+}
+
 h2 {
     width: 100%;
     text-align: center;
@@ -39,7 +43,6 @@ form {
 
     margin-top: 24px;
 }
-
 
 .explore {
     width: 100%;
@@ -84,4 +87,3 @@ form {
         margin-left: 8px;
     }
 }
-
