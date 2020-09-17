@@ -29,6 +29,10 @@ const routes: Routes = [
     path: 'service-step-two',
     loadChildren: () => import('./service-step-two/service-step-two.module').then( m => m.ServiceStepTwoPageModule)
   },
+  {
+    path: 'recover-password',
+    loadChildren: () => import('./recover-password/recover-password.module').then( m => m.RecoverPasswordPageModule)
+  },
 
 ];
 @NgModule({
