@@ -1,0 +1,28 @@
+<ion-header collapse="condense">
+  <ion-toolbar> </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="ion-padding">
+  <a routerLink="/recover-password" routerDirection="back">
+    <ion-icon name="arrow-back-outline" class="arrow-back"></ion-icon>
+  </a>
+
+  <ion-grid>
+    <ion-row>
+      <ion-img src="assets/LOGO.png"></ion-img>
+    </ion-row>
+    <ion-row>
+      <form>
+        <h4>Digite o código recebido por SMS para continuar</h4>
+        <div class="wrapper-input">
+          <ion-input required type="number"></ion-input>
+          <ion-input required type="number"></ion-input>
+          <ion-input required type="number"></ion-input>
+          <ion-input required type="number"></ion-input>
+        </div>
+
+        <ion-button expand="block" shape="round">Continue</ion-button>
+      </form>
+    </ion-row>
+  </ion-grid>
+</ion-content>
