@@ -1,0 +1,83 @@
+<ion-content fullscreen class="ion-padding">
+  <a routerLink="/dashboard" routerDirection="back">
+    <ion-icon name="arrow-back-outline" class="arrow-back"></ion-icon>
+  </a>
+
+  <ion-grid>
+    <ion-row>
+      <div class="avatar">
+        <ion-avatar>
+          <img src="assets/dog.jpg" />
+        </ion-avatar>
+      </div>
+
+      <h2>Alterar foto</h2>
+
+      <form>
+        <div class="wrapper-input">
+          <span>
+            <ion-icon name="person-circle"></ion-icon>
+          </span>
+          <ion-input required placeholder="Nome"></ion-input>
+        </div>
+
+        <div class="wrapper-input">
+          <span>
+            <ion-icon name="at-circle"></ion-icon>
+          </span>
+          <ion-input required placeholder="E-mail" type="email"></ion-input>
+        </div>
+
+        <div class="wrapper-input">
+          <span>
+            <ion-icon name="call"></ion-icon>
+          </span>
+          <ion-input
+            required
+            placeholder="Telefone"
+            type="tel"
+            [brmasker]="{phone: true}"
+          ></ion-input>
+        </div>
+
+        <ion-button expand="block" shape="round">Alterar</ion-button>
+      </form>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="home-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="paw-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="heart-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="heart-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <a routerLink="/dashboard">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-footer>

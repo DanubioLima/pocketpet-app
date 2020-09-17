@@ -1,3 +1,58 @@
+<ion-menu side="start" menuId="menu" contentId="menu">
+  <ion-header>
+    <ion-toolbar>
+      <div class="sidemenu-header">
+        <ion-avatar>
+          <img src="assets/dog.jpg" />
+        </ion-avatar>
+        <div>
+          <h3>Maria José</h3>
+          <a routerLink="/update">
+            Editar cadastro
+            <ion-icon name="settings-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item class="sidemenu-item">
+        <ion-label>Meus pets</ion-label>
+        <a>
+          <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+        </a>
+      </ion-item>
+      <ion-item class="sidemenu-item">
+        <ion-label>Endereços</ion-label>
+        <a>
+          <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+        </a> </ion-item
+      ><ion-item class="sidemenu-item">
+        <ion-label>Pagamentos</ion-label>
+        <a>
+          <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+        </a> </ion-item
+      ><ion-item class="sidemenu-item">
+        <ion-label>Meus agendamentos</ion-label>
+        <a>
+          <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+        </a> </ion-item
+      ><ion-item class="sidemenu-item">
+        <ion-label>Alterar senha</ion-label>
+        <a>
+          <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+        </a> </ion-item
+      ><ion-item class="sidemenu-item">
+        <ion-label>Sair</ion-label>
+        <a>
+          <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+        </a>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
 <ion-content fullscreen>
   <div class="header">
     <h2 id="location">Fortaleza, CE</h2>
@@ -81,3 +136,5 @@
     </div>
   </div>
 </ion-content>
+
+<router-outlet id="menu"></router-outlet>

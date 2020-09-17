@@ -1,3 +1,36 @@
+ion-toolbar {
+    --border-color: #7a40fc;
+}
+
+.sidemenu-header {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+
+    div {
+        margin-left: 8px;
+
+        h3 {
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: #7a40fc;
+        }
+    }
+}
+
+.sidemenu-item {
+    border-bottom: 1px solid #7a40fc;
+
+    ion-icon {
+        color: #7a40fc;
+    }
+}
+
 ion-content {
     position: relative;
 }
